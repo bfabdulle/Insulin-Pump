@@ -1,7 +1,5 @@
 # Insulin Pump Simulation (Qt / C++)
 
-**Author:** Basera Farah Abdulle  
-
 ## Overview
 
 This project is a desktop-based simulation of the **t:slim X2 insulin pump**, designed to model real-world insulin pump behavior in a safe, controlled software environment. The application demonstrates how a safety-critical medical device can manage insulin delivery, system state, and user interaction while maintaining reliability and traceability.
