@@ -6,6 +6,10 @@ This project is a desktop-based simulation of the **t:slim X2 insulin pump**, de
 
 The simulator focuses on realistic **basal and bolus insulin delivery**, dynamic system control, and a responsive graphical user interface, making it well suited as a demonstration of object-oriented design, algorithmic decision-making, and GUI development in C++.
 
+## GUI Demo
+https://github.com/user-attachments/assets/dc36f22a-7bdf-4e0b-a8f9-a4805c76e90c
+
+
 ## Key Features
 
 - Basal insulin delivery algorithm inspired by Control-IQ behavior  
