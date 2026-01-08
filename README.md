@@ -1,67 +1,72 @@
-# COMP 3004 Team 17 Final Project - Insulin Pump
+# Insulin Pump Simulation (Qt / C++)
 
-### GitHub Repository: https://github.com/rae-shi/comp3004Team17InsulinPump
+**Author:** Basera Farah Abdulle  
 
-### Team Members:
+## Overview
 
-Basera Farah Abdulle - 101257784  
-Dulika Gamage - 101263208  
-Davis Stanko - 101268432  
-Rae Shi - 101281994
+This project is a desktop-based simulation of the **t:slim X2 insulin pump**, designed to model real-world insulin pump behavior in a safe, controlled software environment. The application demonstrates how a safety-critical medical device can manage insulin delivery, system state, and user interaction while maintaining reliability and traceability.
 
-### Purpose:
+The simulator focuses on realistic **basal and bolus insulin delivery**, dynamic system control, and a responsive graphical user interface, making it well suited as a demonstration of object-oriented design, algorithmic decision-making, and GUI development in C++.
 
-This was the final project for COMP 3004, where we were asked to make an insulin pump simulation. Our program simulates the t:slim x2 insulin pump, with basal and bolus insulin delivery, which the admin can configure to their liking.
+## Key Features
 
-### Files included:
+- Basal insulin delivery algorithm inspired by Control-IQ behavior  
+- Bolus insulin calculation with user-defined inputs  
+- Start, stop, and resume insulin delivery controls  
+- Battery and insulin cartridge simulation  
+- Error handling and safety checks  
+- Event history and error logging for traceability  
+- Insulin delivery graphing for real-time visualization  
+- Qt-based GUI focused on clarity and usability  
 
-InsulinPrump.pro  
-insulinpump.cpp  
-insulinpump.h  
-main.cpp  
-mainwindow.cpp  
-mainwindow.h  
-mainwindow.ui  
-tests.cpp  
-Team17-FinalProject-COMP3004.pdf
+## Technologies Used
 
-### Compilation and Running:
+- C++  
+- Qt Framework (Qt Creator, Qt Widgets)  
+- Object-Oriented Design  
+- Unit Testing  
+- UML & System Modeling  
 
-You can access the project in the course VM (VirtualBox) by cloning the repository or moving it into a shared folder (with host and VM) and opening it in QT Creator. You can build it by pressing the hammer icon on the bottom left and running it by pressing the run button on the bottom left.
+## Architecture & Design
 
-### Team Responsibilities 
-#### Basera 101257784
-- Make Design Decisions & organize ideas & debug  
-- Design and implement updateInsulin() control IQ algorithm for basal insulin behaviour  
-- Implement starting, stopping, or Resuming Insulin behaviour  
-- Implement insulin graphing behaviour and clean up the final GUI layout  
-- Implement history  + error logs features  
-- Provide user manual documentation notes  
-- Contribute to creating use cases & sequence diagram (N1, N2)  
-#### Davis Stanko 101268432
-- Make Design Decisions & organize ideas & debug  
-- Contribute to creating, updating, and finalizing use cases  
-- Implement Battery and Insulin Cartridge logic  
-- Develop unit tests  
-- Create Requirements Traceability Matrix  
-- Write textual explanation of design decisions  
-- Record video of simulation  
-#### Dulika Gamage 101263208
-- Make Design Decisions & organize ideas & debug  
-- Designed/implemented/managed the GUI and helped revise it based on changes  
-- Personal profile functionality, disconnect functionality, charge battery functionality, and cleaned up history output logs  
-- Contribute to updating/finalizing Use Cases
-- Make Use Case Diagram
-- Make State Machine Diagram
-- Make UML Class Diagram
-- Make Sequence Diagrams (N4, S1, S2, S3)  
-#### Rae Shi 101281994
-- Make Design Decisions & organize ideas & debug  
-- Make github repository & draft version of header files and cpp code   
-- Implement the bolus calculation   
-- Make sequence diagram (N3)  
+The system is structured using modular, object-oriented components that separate insulin logic, system state management, and user interface concerns. Core insulin behavior is encapsulated in dedicated classes, while the GUI layer communicates with the underlying logic through well-defined interfaces.
+
+Design decisions prioritize maintainability, extensibility, safe handling of state changes, and transparent system feedback through logs and graphs.
+
+## Running the Application
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+
+2. Open the project in Qt Creator
+
+3. Build the project using the build (hammer) icon
+
+4. Run the application using the run button
 
 
-### Video Demonstration:
+## Project Structure
 
-https://www.youtube.com/watch?v=DZweDLuIvL4
+* insulinpump.h / insulinpump.cpp — Core insulin pump logic
+
+* mainwindow.* — GUI logic and interaction
+
+* tests.cpp — Unit tests for system components
+
+* mainwindow.ui — Qt UI layout
+
+## Demonstration
+
+
+## Why This Project Matters
+
+* This project demonstrates experience with:
+
+* Developing safety-critical system simulations
+
+* Implementing state-driven logic and control algorithms
+
+* Building interactive desktop applications in C++
+
+* Designing software with real-world constraints in mind
